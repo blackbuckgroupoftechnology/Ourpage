@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import GenTelematics from "@/components/GenTelematics";
 import DriverScoreCard from "@/components/DriverScoreCard";
 import ClaimOverview from "@/components/ClaimOverview";
+import MonthlyData from "@/components/MonthlyData";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <GenTelematics />
       {/* <DriverScoreCard /> */}
       <ClaimOverview />
+      <MonthlyData />
     </div>
   );
 }
