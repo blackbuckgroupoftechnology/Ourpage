@@ -5,7 +5,7 @@ import { IoBicycleOutline } from "react-icons/io5";
 
 const MonthlyData = () => {
     return (
-        <div className='m-4 px-2 w-1/2 h-15 rounded-xl border'>
+        <div className='w-[570px] h-[230px] border-[#FFFFFFE8] bg-[#ECF0F9] rounded-xl border'>
             <div className='flex justify-between items-center '>
                 <div className=' gap-2 flex items-center'>
                     <div className='bg-blue-500 rounded-lg'>

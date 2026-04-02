@@ -31,34 +31,36 @@ const itemList2 = [
 const SideNav = () => {
 
   return (
-    <div className='border w-1/4 border-gray-300 h-[100vh]'>
+    <div className='border-3 w-1/4 pt-8 border-white w-[291px]'>
       <div className='w-full border-b border-gray-300 '>
         <div className="flex items-center gap-2 cursor-pointer">
-          <Image src={yetriLogo} alt="YetriTechLogo" className="border w-15 h-15 object-contain" />
+          <Image src={yetriLogo} alt="YetriTechLogo" className="border w-[91px] h-[69px]  object-contain" />
           <div>
-            <h1 className="text-2xl text-blue-500 font-semibold text-gray-800">Yetri Tech</h1>
+            <h1 className="text-2xl text-blue-500 font-semibold text-gray-800 size-[32px] w-full">Yetri Tech</h1>
             <h1 className='text-blue-600'>Insurance</h1>
           </div>
         </div>
+        <div className='flex flex-col items-center'>
         {
           itemList.map((item, index) => {
             const Icon = item.image;
             return (
-              <div key={index} className='flex text-gray-500 items-center gap-2 px-6 p-3 hover:bg-gray-200 cursor-pointer'>
-                <Icon className="text-xl" />
+              <div key={index} className='flex w-[238px] h-[52px] text-black font-semibold rounded-3xl items-center gap-2 px-6 hover:bg-[#317FF8] hover:text-white cursor-pointer'>
+                <Icon className="" />
                 <span>{item.title}</span>
               </div>
             );
           })
         }
+        </div>
       </div>
-      <div className='m-8 border border-white p-3 bg-blue-100 font-bold rounded-xl'>
+      <div className='m-8 border w-[229px] h-[219px] border-white p-3 bg-[#D4E2F8] blur-[.1px] font-semibold rounded-2xl'>
         Quick Actions
         {
           itemList2.map((item, index) => {
             const Icon = item.image;
             return (
-              <div key={index} className='my-3 rounded-xl p-2 border border-white flex items-center gap-1 hover:bg-gray-200 cursor-pointer'>
+              <div key={index} className='my-3 rounded-xl p-2 w-[202px] h-[57px] shadow-xl border border-[#FFFFFFE8] flex items-center gap-1 hover:bg-gray-200 cursor-pointer'>
                 <Icon className="text-xl text-blue-700" />
                 <span>{item.title}</span>
               </div>

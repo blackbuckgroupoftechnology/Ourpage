@@ -25,19 +25,17 @@ const TelData = [
 
 const GenTelematics = () => {
     return (
-        <div className="mt-5 w-full flex justify-evenly flex-wrap gap-6">
+        <div className="mt-5 w-[1040px] h-[112px] flex justify-between flex-wrap">
             {TelData.map((item, index) => {
                 const Icon = item.image;
 
                 return (
                     <div
                         key={index}
-                        className="flex items-center gap-4 w-[260px] p-5 rounded-2xl 
-                                   bg-white/5 backdrop-blur-md 
-                                   border border-white/10 
-                                   shadow-lg hover:shadow-xl 
-                                   transition-all duration-300 
-                                   hover:-translate-y-1 cursor-pointer"
+                        className="flex items-center gap-4 w-[320px] h-[111px] p-5 rounded-2xl 
+                                   bg-[#EEF1FACC] backdrop-blur-md 
+                                   border  border-[#FFFFFFE8]
+                                   shadow-lg cursor-pointer"
                     >
                         {/* Icon */}
                         <div className="bg-blue-500 p-4 rounded-xl text-black text-2xl">
