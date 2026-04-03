@@ -15,6 +15,8 @@ import Module from 'module';
 import Image from 'next/image';
 import yetriLogo from "@/public/yetriLogo.png";
 
+import { FaRegDotCircle } from "react-icons/fa";
+
 const itemList = [
   { image: MdSpaceDashboard, title: "Dashboard" },
   { image: FaFileAlt, title: "Policies" },
@@ -31,13 +33,13 @@ const itemList2 = [
 const SideNav = () => {
 
   return (
-    <div className='border-3 w-1/4 pt-8 border-white w-[291px]'>
+    <div className='border-3 w-1/4 shadow-lg pt-8 border-white w-[291px]'>
       <div className='w-full border-b border-gray-300 '>
-        <div className="flex items-center gap-2 cursor-pointer">
-          <Image src={yetriLogo} alt="YetriTechLogo" className="border w-[91px] h-[69px]  object-contain" />
+        <div className="flex items-center gap-0 cursor-pointer">
+          <Image src={yetriLogo} alt="YetriTechLogo" className="w-[91px] h-[69px]  object-contain" />
           <div>
-            <h1 className="text-2xl text-blue-500 font-semibold text-gray-800 size-[32px] w-full">Yetri Tech</h1>
-            <h1 className='text-blue-600'>Insurance</h1>
+            <h1 className="text-4xl text-blue-500 font-semibold text-gray-800 size-[32px] w-full">Yetri Tech</h1>
+            <h1 className='text-blue-600'>INSURANCE</h1>
           </div>
         </div>
         <div className='flex flex-col items-center'>
@@ -53,6 +55,14 @@ const SideNav = () => {
           })
         }
         </div>
+      </div>
+      <div className='m-8 px-5 border w-[229px] h-[92px] border-white p-2 bg-[#A5C9BE4D] blur-[.1px] font-semibold rounded-2xl flex flex-col gap-1 shadow-lg'>
+        <div>Fleet Health</div>
+        <div className='flex jusitfy-center items-center text-green-600'>
+          <FaRegDotCircle />
+          Excellent
+        </div>
+        <div>0.2% last month</div>
       </div>
       <div className='m-8 border w-[229px] h-[219px] border-white p-3 bg-[#D4E2F8] blur-[.1px] font-semibold rounded-2xl'>
         Quick Actions

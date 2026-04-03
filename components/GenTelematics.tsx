@@ -25,7 +25,7 @@ const TelData = [
 
 const GenTelematics = () => {
     return (
-        <div className="mt-5 w-[1040px] h-[112px] flex justify-between flex-wrap">
+        <div className="mt-5 w-[1040px] h-[112px]  flex justify-between flex-wrap">
             {TelData.map((item, index) => {
                 const Icon = item.image;
 
@@ -39,7 +39,7 @@ const GenTelematics = () => {
                     >
                         {/* Icon */}
                         <div className="bg-blue-500 p-4 rounded-xl text-black text-2xl">
-                            <Icon className='text-white bg-blue-500 rounded w-12 h-12'/>
+                            <Icon className='text-white bg-blue-500  w-12 h-12'/>
                         </div>
 
                         {/* Text */}
