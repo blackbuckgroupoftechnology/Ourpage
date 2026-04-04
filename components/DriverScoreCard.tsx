@@ -73,7 +73,7 @@ const lineOptions = {
 
 const DriverScoreCard = () => {
   return (
-    <div className='border shadow-lg w-[430px] h-[435px] border-[#FFFFFFE8] bg-[#ECF0F9] px-2 rounded-2xl'>
+    <div className='mr-4 border shadow-lg w-[430px] h-[435px] border-[#FFFFFFE8] bg-[#ECF0F9] px-2 rounded-2xl'>
       <div className='px-3 text-2xl py-2 font-semibold border-[#FFFFFF99] border-b '>
         Driving Score & Risk Analysis
       </div>

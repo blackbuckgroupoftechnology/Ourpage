@@ -14,7 +14,7 @@ import { option } from 'framer-motion/client';
 ChartJS.register(BarElement, CategoryScale, LinearScale);
 
 const data = {
-    labels: [1, 3, 4,6, 7, 8, 9, 10],
+    labels: [1, 3, 4, 6, 7, 8, 9, 10],
     datasets: [
       {
         label: "rides",
@@ -36,7 +36,7 @@ const barOptions = {
 
 const MonthlyData = () => {
     return (
-        <div className='w-[570px] h-[230px] border-[#FFFFFFE8] bg-[#ECF0F9] rounded-xl shadow-lg border'>
+        <div className='w-[560px] h-[230px] border-[#FFFFFFE8] bg-[#ECF0F9] rounded-xl shadow-lg border'>
             <div className='flex shadow-lg rounded-xl p-2 justify-between items-center '>
                 <div className=' gap-2 flex items-center'>
                     <div className='bg-blue-500 rounded-lg'>

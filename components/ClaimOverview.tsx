@@ -1,6 +1,9 @@
+"use client"
 import React from 'react'
 import Image from 'next/image';
 import yetriLogo from "@/public/yetriLogo.png";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import map from "@/public/map.png";
 import { CiUser } from "react-icons/ci";
 import { FaPlay } from "react-icons/fa";
@@ -11,7 +14,9 @@ const ClaimOverview = () => {
         <div className='border shadow-lg w-[560px] h-[435px] border-[#FFFFFFE8] bg-[#ECF0F9] rounded-2xl'>
             <div className='flex p-5  justify-between  items-center'>
                 <h1 className='text-3xl'>claim overview</h1>
-                <p className='text-blue-500'>View All</p>
+                <div className='flex items-center gap-2 text-blue-500 hover:cursor-pointer'>View All
+                    <FaArrowRightLong />
+                </div>
             </div>
             <div className='h-[360px] flex flex-col justify-between'>
                 {[1, 2, 3].map((item, index) => {

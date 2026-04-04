@@ -33,7 +33,7 @@ const itemList2 = [
 const SideNav = () => {
 
   return (
-    <div className='border-3 w-1/4 shadow-lg pt-8 border-white w-[291px]'>
+    <div className='border-3 h-full flex flex-col justify-evenly w-1/4 shadow-lg pt-8 border-white w-[291px]'>
       <div className='w-full border-b border-gray-300 '>
         <div className="flex items-center gap-0 cursor-pointer">
           <Image src={yetriLogo} alt="YetriTechLogo" className="w-[91px] h-[69px]  object-contain" />
