@@ -77,9 +77,14 @@ const DriverScoreCard = () => {
       <div className='px-3 text-2xl py-2 font-semibold border-[#FFFFFF99] border-b '>
         Driving Score & Risk Analysis
       </div>
-      <div className=' flex justify-center w-full h-[160px] '>
-        <Pie options={pieOptions} data={PieData} />
+      <div className='relative'>
+        <div className='absolute top-8 opacity-80 left-23 bg-zinc-200 w-25 h-25 rounded-full flex flex-col justify-center items-center'>
+          <p>Risk</p><p> Distribution</p></div>
+        <div className=' flex justify-center w-full h-[160px] '>
+          <Pie options={pieOptions} data={PieData} />
+        </div>
       </div>
+
       <div className='px-3 text-2xl py-2 font-semibold border-[#FFFFFF99] border-b '>
         Average Driving last 8 months
       </div>

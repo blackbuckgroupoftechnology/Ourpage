@@ -38,7 +38,9 @@ const GenTelematics = () => {
                                    shadow-lg cursor-pointer"
                     >
                         {/* Icon */}
-                        <div className="bg-blue-500 p-4 rounded-xl text-black text-2xl">
+                        <div className="bg-blue-500 p-4 rounded-xl text-black text-2xl
+                        shadow-[inset_0_2px_4px_rgba(255,255,255,0.4),inset_0_-4px_6px_rgba(0,0,0,0.2)]
+                        ">
                             <Icon className='text-white bg-blue-500  w-12 h-12'/>
                         </div>
 

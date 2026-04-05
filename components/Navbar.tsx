@@ -15,14 +15,15 @@ const Navbar = () => {
     <nav className="w-[1039px] md:w-full h-[44px] mt-5 flex items-center justify-between">
 
       {/* Search Bar */}
-      <motion.div className="flex items-center shadow-lg gap-2 bg-gray-100 px-4 py-2 rounded-full w-[446px] md:w-112 transition-all duration-300 hover:shadow-md">
+      <div className="flex items-center shadow-lg gap-2 bg-gray-100 px-4 py-2 rounded-full w-[446px] md:w-112 transition-all duration-300 hover:shadow-md
+      shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)]">
         <IoIosSearch className="text-gray-500 w-6 h-6" />
         <input
           type="text"
           placeholder="Search specific vehicle"
           className="bg-transparent outline-none w-full text-gray-700 placeholder-gray-400 text-sm"
         />
-      </motion.div>
+      </div>
 
       <motion.div className=" w-[200px] h-[43px] border  border-[#FFFFFFE8] flex items-center gap-2 bg-[#EEF1FACC] text-white font-semibold px-2 py-1 rounded-lg shadow-lg cursor-pointer ">
         <FaCalendarAlt className="w-5 h-5 text-[#43536B] " />
