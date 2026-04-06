@@ -27,7 +27,7 @@ import { Line, Pie } from 'react-chartjs-2';
 const PieData = {
   labels: ["High Risk", "Average Risk", "Low Risk"],
   datasets: [{
-    data: [10, 20, 13],
+    data: [10, 40, 43],
     backgroundColor: ["#faa693", "#fae993", "#8fc2f7"],
   },
   ],
@@ -56,7 +56,7 @@ const lineData = {
   datasets: [
     {
       label: "Sales",
-      data: [10, 19, 20, 45, 42, 60, 61, 80],
+      data: [10, 19, 20, 45, 42, 160, 111, 180],
       borderColor: "#8fc2f7",
       backgroundColor: "lightblue",
     },

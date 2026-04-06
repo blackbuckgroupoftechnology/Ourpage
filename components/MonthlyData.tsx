@@ -2,6 +2,7 @@
 import React from 'react'
 import { IoBicycleOutline } from "react-icons/io5";
 
+
 import {
   Chart as ChartJS,
   BarElement,
@@ -39,7 +40,7 @@ const MonthlyData = () => {
         <div className='w-[560px] h-[230px] border-[#FFFFFFE8] bg-[#ECF0F9] rounded-xl shadow-lg border'>
             <div className='flex shadow-lg rounded-xl p-2 justify-between items-center '>
                 <div className=' gap-2 flex items-center'>
-                    <div className='bg-blue-500 rounded-lg'>
+                    <div className='bg-blue-500 shadow-[inset_0_2px_4px_rgba(255,255,255,0.4),inset_0_-4px_6px_rgba(0,0,0,0.2)] rounded-lg'>
                         <IoBicycleOutline className='text-white w-10 h-10' />
                     </div>
 

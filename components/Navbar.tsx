@@ -30,16 +30,16 @@ const Navbar = () => {
         <span className='text-sm text-[#43536B]'>20 March 2026</span>
       </motion.div>
 
-      <div className=' w-[45px] h-[43px] rounded-xl border shadow-lg border-white rounded-xl bg-[#EEF1FACC] flex justify-center items-center'>
+      <div className=' w-[45px] h-[43px] rounded-xl border shadow-lg border-white rounded-xl bg-[#EEF1FACC] flex justify-center items-center hover:cursor-pointer'>
         <IoMdNotifications className="w-6 h-6 text-gray-600 cursor-pointer hover:text-gray-800 transition-colors duration-300" />
       </div>
 
       <div className="px-2 w-[253px] h-[43px] shadow-lg  border border-white rounded-xl bg-[#EEF1FACC] flex  justify-center items-center gap-6 hover:cursor-pointer">
         <motion.div className="flex items-center gap-2 cursor-pointer hover:underline">
-          <FaRegUserCircle className="w-7 h-7 text-gray-600" />
+          <FaRegUserCircle className="w-7 h-7 bg-white rounded-full text-gray-600" />
           <div className="font-medium text-gray-700">USER NAME</div>
-        </motion.div>
         <RiArrowDropDownLine className="w-7 h-7 text-gray-600 cursor-pointer hover:text-gray-800 transition-colors duration-300" />
+        </motion.div>
       </div>
 
     </nav>

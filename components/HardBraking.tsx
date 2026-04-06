@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { VscDebugBreakpointConditional } from "react-icons/vsc";
+import { CiCircleInfo } from "react-icons/ci";
 
 import {
   Chart as ChartJS,
@@ -109,9 +110,19 @@ const HardBraking = () => {
     <div className="mr-4 w-full shadow-xl max-w-[430px] h-auto border border-[#FFFFFFE8] bg-[#ECF0F9] rounded-xl ">
 
       {/* Title */}
-      <div className="shadow-md rounded-xl p-3 font-semibold text-xl md:text-2xl p-4">
-        Hard Braking Events
+      <div className="shadow-md rounded-xl p-3 font-semibold flex justify-between items-center text-xl md:text-xl p-3">
+        <div className="flex items-center gap-1">
+          Hard Braking Events
+
+          <CiCircleInfo className="text-gray-400" />
+        </div>
+        <div className=" flex items-center gap-1 text-sm">
+          <div className="w-3  h-3 bg-blue-400 rounded-full"></div>
+          This month
+        </div>
+
       </div>
+
 
       {/* Data Rows */}
       <div className=" ">
