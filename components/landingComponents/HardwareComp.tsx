@@ -1,48 +1,48 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { FaUser } from "react-icons/fa";
-import { RiMotorbikeFill } from "react-icons/ri";
-import { RiGovernmentFill } from "react-icons/ri";
-import { MdEmojiTransportation } from "react-icons/md";
-import { FaBusinessTime } from "react-icons/fa6";
-import { FaAmbulance } from "react-icons/fa";
+import { FaMicrochip } from "react-icons/fa";
+import { TbGps } from "react-icons/tb";
+import { MdOutlineSensors } from "react-icons/md";
+import { PiCassetteTapeBold } from "react-icons/pi";
+import { SiRelay } from "react-icons/si";
+import { LuHdmiPort } from "react-icons/lu";
 
 
 import { img } from 'framer-motion/client';
 
 
 const BenifitData = [
-    {   title: "General User",
-        img: FaUser,
+    {   title: "Micro Controller",
+        img: FaMicrochip,
     },
     {
-        title: "Private Vehicles",
-        img: RiMotorbikeFill,
+        title: "GPS/Baidu",
+        img: TbGps,
     },
     {
-        title: "Government",
-        img: RiGovernmentFill,
+        title: "IMU Sensor",
+        img: MdOutlineSensors,
     },
     {
-        title: "Public Transport",
-        img: MdEmojiTransportation,
+        title: "IP-68 Casing",
+        img: PiCassetteTapeBold,
     },
     {
-        title:"Business",
-        img: FaBusinessTime,
+        title:"Relay System",
+        img: SiRelay,
     },
     {
-        title: "Emergency Services",
-        img:FaAmbulance,
+        title: "OBD-II Port",
+        img:LuHdmiPort,
     }
 ]
 
-const UserBenifits = () => {
+const HardwareCom = () => {
     return (
         <div>
             <div className='flex justify-center items-center'>
-            <div className='p-4 w-96 border rounded-xl text-center text-2xl '>Multi User Benefits</div>
+            <div className='p-4 w-96 border rounded-xl text-center text-2xl '>Hardware Composition</div>
             </div>
             <div className='border p-4 rounded-xl flex justify-evenly items-center'>
                 {
@@ -65,4 +65,4 @@ const UserBenifits = () => {
     )
 }
 
-export default UserBenifits
+export default HardwareCom
