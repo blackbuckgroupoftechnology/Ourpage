@@ -20,11 +20,11 @@ const serviceData = [
 const Services = () => {
     return (
         <div>
-            <div className='flex justify-evenly border'>
+            <div className='flex justify-evenly my-4 '>
                 {serviceData.map((item, index) => (
-                    <div key={index} className='border p-4 rounded-xl flex flex-col justify-evenly items-center'>
-                        <h1 className=' text-2xl font-bold '>{item.desc}</h1>
-                        <p> {item.title}</p>
+                    <div key={index} className='border w-2/10 p-4 rounded-xl flex flex-col justify-evenly items-center border-white shadow-xl'>
+                        <h1 className=' text-4xl font-semibold text-[#9747FF]  '>{item.desc}</h1>
+                        <p className=' text-3xl'> {item.title}</p>
                     </div>
                 ))}
             </div>

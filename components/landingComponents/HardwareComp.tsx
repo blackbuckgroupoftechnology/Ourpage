@@ -13,7 +13,8 @@ import { img } from 'framer-motion/client';
 
 
 const BenifitData = [
-    {   title: "Micro Controller",
+    {
+        title: "Micro Controller",
         img: FaMicrochip,
     },
     {
@@ -29,35 +30,35 @@ const BenifitData = [
         img: PiCassetteTapeBold,
     },
     {
-        title:"Relay System",
+        title: "Relay System",
         img: SiRelay,
     },
     {
         title: "OBD-II Port",
-        img:LuHdmiPort,
+        img: LuHdmiPort,
     }
 ]
 
 const HardwareCom = () => {
     return (
-        <div>
+        <div className=''>
             <div className='flex justify-center items-center'>
-            <div className='p-4 w-96 border rounded-xl text-center text-2xl '>Hardware Composition</div>
+                <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white shandow-2xl text-2xl '>Hardware Composition</div>
             </div>
-            <div className='border p-4 rounded-xl flex justify-evenly items-center'>
+            <div className='border p-4 rounded-2xl flex flex-col-2 justify-evenly items-center border-white shadow-xl'>                
                 {
-                    BenifitData.map((item, index) => {
-                        const Icon = item.img;
-                        return (
-                            <div key={index} className='p-4 rounded-lg flex flex-col items-center justify-center border'>
-                                <Icon className='w-20 h-20 text-blue-500' />
-                                {/* <FaUser className='w-20 h-20 text-blue-500' /> */}
-                                <h1>{item.title}</h1>
-                                <span className='text-gray-500 cursor-pointer'>More Info</span>
-                            </div>
-                        )
-                    })
-                }
+                BenifitData.map((item, index) => {
+                    const Icon = item.img;
+                    return (
+                        <div key={index} className='p-4 rounded-lg flex flex-col items-center justify-center border border-white shadow-xl'>
+                            <Icon className='w-20 h-20 text-blue-500' />
+                            {/* <FaUser className='w-20 h-20 text-blue-500' /> */}
+                            <h1>{item.title}</h1>
+                            <span className='text-gray-500 cursor-pointer'>More Info</span>
+                        </div>
+                    )
+                })
+            }
 
             </div>
 
