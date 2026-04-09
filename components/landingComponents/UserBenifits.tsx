@@ -42,7 +42,7 @@ const UserBenifits = () => {
     return (
         <div>
             <div className='flex justify-center items-center'>
-            <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white shandow-2xl text-2xl '>Multi User Benefits</div>
+            <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white text-3xl '>Multi User Benefits</div>
             </div>
             <div className='border p-4 rounded-2xl flex justify-evenly items-center border-white shadow-xl'>
                 {
