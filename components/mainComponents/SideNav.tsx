@@ -13,7 +13,6 @@ import { GoDownload } from "react-icons/go";
 
 import Module from 'module';
 import Image from 'next/image';
-import yetriLogo from "@/public/yetriLogo.png";
 
 import { FaRegDotCircle } from "react-icons/fa";
 
@@ -38,7 +37,7 @@ const SideNav = () => {
     <div className='border-3 h-full flex flex-col justify-evenly w-1/4 shadow-lg pt-8 border-white w-[291px]'>
       <div className='w-full border-b border-gray-300 '>
         <div className="flex items-center gap-0 cursor-pointer">
-          <Image src={yetriLogo} alt="YetriTechLogo" className="w-[91px] h-[69px]  object-contain" />
+          <Image src='/yetriLogo.png' alt="YetriTechLogo" width={100} height={100} className="w-[91px] h-[69px]  object-contain" />
           <div className='flex flex-col justify-center gap-2'>
             <h1 className="text-4xl text-blue-500 font-semibold text-gray-800 size-[32px] w-full">Yetri Tech</h1>
             <h1 className='text-blue-600'>INSURANCE</h1>

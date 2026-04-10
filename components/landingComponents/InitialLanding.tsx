@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { HiArrowUpRight } from "react-icons/hi2";
 import Image from 'next/image';
 
+import { HiArrowUpRight } from "react-icons/hi2";
 import { FaCalendarAlt } from "react-icons/fa";
 
 const features = ["Tracking", "Safety", "AI assistance", "Traffic Optimization", "Complete Vehicle Intelligence"]
@@ -28,10 +28,10 @@ const InitialLanding = () => {
       <div className='h-[600px] flex flex-col justify-between relative'>
         <div className='flex flex-col gap-6 px-10 w-6/8'>
           <div className=''>
-            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent text-3xl font-bold font-bold'>
+            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent font-bold font-bold'>
               Smart Mobility.
             </span><br /><br />
-            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent text-3xl font-bold font-bold'>
+            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent font-bold font-bold'>
               Safer Journeys.
             </span>
           </div>
@@ -49,7 +49,7 @@ const InitialLanding = () => {
           </ul>
         </div>
 
-        <div className=' flex w-6/8 justify-evenly items-center'>
+        <div className='w-6/8 flex justify-evenly items-center'>
           <button className='p-2 w-3/8 text-2xl shadow-xl font-semibold text-white bg-[#0649B3] flex justify-center rounded-xl items-center gap-3 cursor-pointer'>
             OPEN ORDER
             <HiArrowUpRight className='text-2xl' />

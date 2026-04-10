@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Services from '@/components/landingComponents/Services';
 import InitialLanding from '@/components/landingComponents/InitialLanding';
 import Nav from '@/components/landingComponents/Nav';
+import Contact from '@/components/landingComponents/Contact';
 
 const page = () => {
     return (
@@ -25,6 +26,8 @@ const page = () => {
             <h1 className=" text-4xl text-center font-bold my-4">Enterprise-Grade Engineering</h1>
             <p className='text-center text-2xl'>Every component is carefully selected and integrated to ensure maximum
                 reliability, accuracy, and performance in all conditions. Built to last, designed to perform.</p>
+
+            <Contact />
         </div>
     )
 }

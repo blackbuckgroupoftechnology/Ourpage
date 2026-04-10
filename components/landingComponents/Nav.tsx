@@ -13,7 +13,6 @@ const Nav = () => {
 
             </div>
             <div className='w-3/5  flex justify-between items-center'>
-
                 <div className='w-1/2 flex justify-between'>
                     {
                         ['About', 'Product', 'Team', 'Partners', 'Contact Us'].map((item, index) => (
