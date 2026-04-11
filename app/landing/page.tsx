@@ -6,6 +6,7 @@ import Services from '@/components/landingComponents/Services';
 import InitialLanding from '@/components/landingComponents/InitialLanding';
 import Nav from '@/components/landingComponents/Nav';
 import Contact from '@/components/landingComponents/Contact';
+import LoginComponent from '@/components/landingComponents/Login';
 
 const page = () => {
     return (
@@ -28,6 +29,7 @@ const page = () => {
                 reliability, accuracy, and performance in all conditions. Built to last, designed to perform.</p>
 
             <Contact />
+            <LoginComponent/>
         </div>
     )
 }
