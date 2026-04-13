@@ -5,9 +5,8 @@ import Link from 'next/link';
 
 const LoginComponent: React.FC = () => {
 
-
     return (
-        <div className=" flex items-center justify-center sm:px-6 lg:px-8">
+        <div className=" flex items-center justify-center ">
             <div className="shadow-xl p-5 rounded-xl max-w-md bg-gray-100 w-full space-y-8">
                 <div className='flex justify-evenly'>
                     <h2 className="mt-6 text-center text-3xl font-semibold text-gray-700 bg-blue-700 text-white rounded-lg p-3 cursor-pointer">

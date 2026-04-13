@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const Nav = () => {
     return (
-        <div className='border px-2 flex justify-between items-center rounded-2xl shadow-xl border-white'>
-            <div className='flex gap-2 cursor-pointer'>
-                <Image src="/YetriLOGO.png" alt="Landing Image" width={50} height={10} className='border-red-300 rounded-lg' />
+        <div className='p-3 bg-gray-100 sticky top-0 z-50 flex justify-between items-center shadow-xl'>
+            <div className='flex gap-2cursor-pointer'>
+                <Image src="/YetriLOGO.png" alt="Landing Image" width={60} height={60} />
                 <div>
                     <h1 className='text-[#0649B3] text-3xl font-bold'>YetriTECH</h1>
                     <p className='text-[#5793C6] text-sm'>Developed by BlackBuck</p>

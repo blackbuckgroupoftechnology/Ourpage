@@ -42,15 +42,15 @@ const BenifitData = [
 const HardwareCom = () => {
     return (
         <div className=''>
-            <div className='flex justify-center items-center'>
+            <div className='flex  justify-center items-center'>
                 <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white text-3xl '>Hardware Composition</div>
             </div>
-            <div className='border p-4 rounded-2xl flex flex-col-2 justify-evenly items-center border-white shadow-xl'>                
+            <div className='border bg-gray-100 p-4 rounded-2xl flex flex-col-2 justify-evenly items-center border-white shadow-xl'>                
                 {
                 BenifitData.map((item, index) => {
                     const Icon = item.img;
                     return (
-                        <div key={index} className='p-4 rounded-lg flex flex-col items-center justify-center border border-white shadow-xl'>
+                        <div key={index} className='p-4 bg-white rounded-lg flex flex-col items-center justify-center border border-white shadow-xl'>
                             <Icon className='w-20 h-20 text-blue-500' />
                             {/* <FaUser className='w-20 h-20 text-blue-500' /> */}
                             <h1>{item.title}</h1>

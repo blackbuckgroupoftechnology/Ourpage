@@ -39,26 +39,46 @@ const Contact = () => {
                     <textarea className='bg-zinc-500 rounded-xl h-[150px]'></textarea>
                     <button className='py-4 text-xl font-semibold bg-blue-600 text-white rounded-xl'>Send message</button>
                 </div>
-                <div className='w-1/2 p-4 '>
+                <div className='w-1/2 p-4 flex flex-col gap-4'>
 
-                    <h1 className='font-bold text-3xl mb-4'>Contact Information</h1>
-                    {
-                        displayInfo.map((item, index) => {
-                            const Icon = item.img;
-                            return (
-                                <div className='p-4 flex items-center gap-5' key={index}>
-                                    <div className=' p-3 rounded-lg bg-blue-200'>
-                                        <Icon className='w-[30px] h-[30px] text-blue-600'/>
-                                    </div>
-                                    <div>
-                                        <div >{item.title}</div>
-                                        <div className='w-full cursor-pointer hover:text-blue-400 '>{item.info} </div>
-                                    </div>
+                    <div className='p-5 bg-gray-100 border rounded-lg border-zinc-300 shadow-lg'>
+                        <h1 className='font-bold text-3xl mb-4'>Contact Information</h1>
 
-                                </div>
-                            )
-                        })
-                    }
+                        {
+                            displayInfo.map((item, index) => {
+                                const Icon = item.img;
+                                return (
+                                    <div className='p-4 flex items-center gap-5' key={index}>
+                                        <div className=' p-3 rounded-lg bg-blue-200'>
+                                            <Icon className='w-[30px] h-[30px] text-blue-600' />
+                                        </div>
+                                        <div>
+                                            <div >{item.title}</div>
+                                            <div className='w-full cursor-pointer hover:text-blue-400 '>{item.info} </div>
+                                        </div>
+
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+
+                    <div className='p-6 flex flex-col gap-4 border bg-gray-100 rounded-xl border-zinc-300 shadow-lg'>
+                        <h1 className='text-2xl font-semibold'>Business Hours</h1>
+                        <div className='flex justify-between'>
+                            <span>Sunday-Thursday</span>
+                            <span className='text-blue-500'>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div className='flex justify-between'>
+                            <span>Friday</span>
+                            <span className='text-blue-500'>10:00 AM - 4:00 PM</span>
+                        </div>
+                        <div className='flex justify-between'>
+                            <span>Saturday</span>
+                            <span className='text-blue-500'>Closed</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

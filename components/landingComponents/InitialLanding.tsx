@@ -54,17 +54,15 @@ const InitialLanding = () => {
             OPEN ORDER
             <HiArrowUpRight className='text-2xl' />
           </button>
-          <button className='p-2 w-3/8 text-2xl shadow-xl font-semibold text-[#9747FF] border flex justify-center items-center gap-2 border-white rounded-xl cursor-pointer'>
+          <button className='p-2 w-3/8 text-2xl bg-gray-100 shadow-xl font-semibold text-[#9747FF] border flex justify-center items-center gap-2 border-white rounded-xl cursor-pointer'>
             <FaCalendarAlt />
             Schedule a Meeting
           </button>
         </div>
-
         <div className='w-2/6 '>
           <Image src='/hand.png' height={300} width={400} alt='Hand gesture illustration' className=' absolute right-[10px] top-[-28px]' />
         </div>
       </div>
-
 
     </div>
   )
