@@ -26,7 +26,7 @@ const InitialLanding = () => {
       </div>
 
       <div className='h-[600px] flex flex-col justify-between relative'>
-        <div className='flex flex-col gap-6 px-10 w-6/8'>
+        <div className='flex flex-col gap-6 pr-10 w-6/8'>
           <div className=''>
             <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent font-bold font-bold'>
               Smart Mobility.
@@ -35,17 +35,15 @@ const InitialLanding = () => {
               Safer Journeys.
             </span>
           </div>
-          <p className='text-3xl font-bold'>YatriTECH brings intelligence to every vehicle from
+          <p className='text-3xl font-semibold'>YatriTECH brings intelligence to every vehicle from
             private cars to public buses, ambulances,
             fleets and government vehicle</p>
 
-          <ul className='list-disc pl-7 text-2xl font-semibold'>
+          <ul className='list-disc pl-7 flex flex-col gap-6 h-47 text-2xl font'>
             <li>Track every vehicle in real-time with precision GPS technology</li>
             <li>Protect your fleet with AI-powered safety alerts and crash detection</li>
             <li>Empower passengers with live bus tracking and route information</li>
             <li>Monitor driver behavior and optimize routes for maximum efficiency</li>
-            <li>Activates Use-Based-Insurance and get rewards in safe driving</li>
-            <li>AI-Assistance for promotion of safe driving </li>
           </ul>
         </div>
 

@@ -1,6 +1,6 @@
+import React from 'react'
 import UserBenifits from '@/components/landingComponents/UserBenifits';
 import HardwareCom from '@/components/landingComponents/HardwareComp';
-import React from 'react'
 import Image from 'next/image'
 import Services from '@/components/landingComponents/Services';
 import InitialLanding from '@/components/landingComponents/InitialLanding';
@@ -10,12 +10,18 @@ import LoginComponent from '@/components/landingComponents/Login';
 import Footer from '@/components/landingComponents/Footer';
 import BusinessSolutions from '@/components/landingComponents/Partner';
 import TeamSection from '@/components/landingComponents/TeamSection';
+import { Varela_Round } from 'next/font/google';
 
+const varela = Varela_Round({
+    subsets: ['latin'],
+    weight: ['400'],
+});
 const page = () => {
+
     return (
-        <div className=''>
+        <div className={varela.className}>
             <Nav />
-            <div className='p-5 flex flex-col gap-6'>
+            <div className='px-[12%] flex flex-col gap-6'>
 
                 <InitialLanding />
 
@@ -35,7 +41,7 @@ const page = () => {
                 <TeamSection />
                 <BusinessSolutions />
                 <Contact />
-                <LoginComponent />
+                {/* <LoginComponent /> */}
             </div>
             <Footer />
         </div>

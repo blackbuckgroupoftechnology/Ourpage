@@ -13,7 +13,8 @@ import { img } from 'framer-motion/client';
 
 
 const BenifitData = [
-    {   title: "General User",
+    {
+        title: "General User",
         img: FaUser,
     },
     {
@@ -29,12 +30,12 @@ const BenifitData = [
         img: MdEmojiTransportation,
     },
     {
-        title:"Business",
+        title: "Business",
         img: FaBusinessTime,
     },
     {
         title: "Emergency Services",
-        img:FaAmbulance,
+        img: FaAmbulance,
     }
 ]
 
@@ -42,9 +43,9 @@ const UserBenifits = () => {
     return (
         <div>
             <div className='flex justify-center items-center'>
-            <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white text-3xl '>Multi User Benefits</div>
+                <div className='p-4 my-4 w-96 border rounded-2xl text-center text-[#9747FF] font-bold border-white text-3xl bg-gray-100'>Multi User Benefits</div>
             </div>
-            <div className='border bg-gray-100 p-4 rounded-2xl flex justify-evenly border-white shadow-xl'>
+            <div className='border bg-gray-100 p-4 rounded-2xl flex justify-between border-white shadow-xl'>
                 {
                     BenifitData.map((item, index) => {
                         const Icon = item.img;

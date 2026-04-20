@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Nav = () => {
     return (
-        <div className='p-3 bg-gray-100 sticky top-0 z-50 flex justify-between items-center shadow-xl'>
+        <div className='p-3 pr-10 bg-gray-100 sticky top-0 z-50 flex justify-between items-center shadow-xl'>
             <div className='flex gap-2cursor-pointer'>
                 <Image src="/YetriLOGO.png" alt="Landing Image" width={60} height={60} />
                 <div>
@@ -25,7 +25,7 @@ const Nav = () => {
                 <div className='w-1/4 flex justify-between'>
                     {
                         ['Order now', 'Login'].map((item, index) => (
-                            <p key={index} className=' px-2 text-xl rounded-xl bg-[#0649B3] flex justify-center items-center gap-2 text-white h-10 cursor-pointer'>{item}</p>
+                            <p key={index} className=' px-4 text-xl rounded-lg bg-[#0649B3] flex justify-center items-center gap-2 text-white h-10 cursor-pointer'>{item}</p>
                         ))
                     }
                 </div>

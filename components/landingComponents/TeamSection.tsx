@@ -87,11 +87,11 @@ export function TeamSection() {
         {/* Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center justify-center mb-4">
-            <div className="h-px w-8 bg-blue-200"></div>
+            <div className="h-px w-18 bg-blue-200"></div>
             <span className="text-blue-600 text-sm font-semibold uppercase tracking-wider mx-3">
               Our Team
             </span>
-            <div className="h-px w-8 bg-blue-200"></div>
+            <div className="h-px w-18 bg-blue-200"></div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Meet the Minds Behind YatriTECH

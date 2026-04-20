@@ -110,8 +110,8 @@ export function Footer() {
                             social.map((item, index) => {
                                 const Icon = item.img;
                                 return (
-                                    <div className='bg-zinc-900 p-2 rounded-lg cursor-pointer'>
-                                        <Icon key={index} className='text-zinc-300 h-5 w-5' />
+                                    <div key={index} className='bg-zinc-900 p-2 rounded-lg cursor-pointer'>
+                                        <Icon className='text-zinc-300 h-5 w-5' />
                                     </div>
                                 )
                             })

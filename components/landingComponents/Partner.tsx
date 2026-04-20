@@ -1,4 +1,3 @@
-// components/BusinessSolutions.tsx
 import { ReactNode } from 'react';
 import {
     MapPinIcon,
@@ -6,11 +5,6 @@ import {
     CpuChipIcon,
     UserGroupIcon,
     CheckBadgeIcon,
-    TruckIcon,
-    ClockIcon,
-    CloudArrowUpIcon,
-    UserIcon,
-    BuildingLibraryIcon
 } from '@heroicons/react/24/outline';
 
 interface FeatureCardProps {
@@ -54,26 +48,24 @@ const MetricCard = ({ value, label }: MetricCardProps) => (
 
 export function BusinessSolutions() {
     return (
-        <section className=" mt-10">
-            <div className="flex gap-4 container mx-auto p-4 max-w-7xl">
+        <div className="rounded-2xl p-10 bg-gray-100 mt-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Transform Your Fleet Operations
+                </h2>
+                <p className="text-lg text-gray-600">
+                    Built for fleet owners, transport companies, and logistics businesses.
+                    Scale from 10 to 10,000 vehicles with our enterprise-grade platform.
+                </p>
+            </div>
+            <div className=" flex gap-4 container mx-auto">
 
-                {/* Header Section */}
-                <div className='flex flex-col gap-2 '>
-
-                    <div className=" text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Transform Your Fleet Operations
-                        </h2>
-                        <p className="text-lg text-gray-600">
-                            Built for fleet owners, transport companies, and logistics businesses.
-                            Scale from 10 to 10,000 vehicles with our enterprise-grade platform.
-                        </p>
-                    </div>
+                <div className=' flex w-1/2 flex-col gap-2 '>
 
                     {/* Features Grid */}
                     <div className="flex flex-col gap-3">
                         <FeatureCard
-                            icon={<MapPinIcon className="border w-6 h-6" />}
+                            icon={<MapPinIcon className=" w-6 h-6" />}
                             title="Fleet Monitoring"
                             description="Track your entire fleet in real-time with centralized dashboard"
                         />
@@ -95,16 +87,16 @@ export function BusinessSolutions() {
                     </div>
 
                     {/* CTA Button */}
-                    <div className="text-center mb-20">
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-md hover:shadow-lg">
+                    <div className="text-center">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-md hover:shadow-lg cursor-pointer">
                             Schedule a Business Meeting
                         </button>
                     </div>
                 </div>
 
                 {/* Why Choose YatriTECH Section */}
-                <div className="bg-gray-100 rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12 mb-16">
-                    <div className="flex flex-col gap-4">
+                <div className="bg-white rounded-2xl shadow-lg w-1/2 p-8">
+                    <div className="flex flex-col gap-4 ">
                         <div className=''>
                             <h3 className="text-2xl font-bold text-gray-900 mb-6">
                                 Why Choose YatriTECH for Business?
@@ -128,7 +120,7 @@ export function BusinessSolutions() {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

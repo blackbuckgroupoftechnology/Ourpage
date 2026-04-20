@@ -17,7 +17,7 @@ const displayInfo = [
 
 const Contact = () => {
     return (
-        <div>
+        <div className='bg-zinc-100 rounded-xl p-5 mb-10'>
             <h1 className=" text-4xl text-center font-bold my-4">Get In Touch</h1>
             <div className='text-center text-xl'>Have questions? Want to schedule a business meeting? We're here to help.</div>
 
@@ -25,23 +25,22 @@ const Contact = () => {
                 <div className='p-4 flex flex-col gap-5 w-1/2 '>
                     {
                         inputInfo.map((item, index) => {
-
                             return (
                                 <div className='flex flex-col gap-3' key={index}>
                                     <div>{item.title}</div>
-                                    <input type="text" placeholder={item.placeholder} className='px-3 w-full text-gray-400 rounded-lg h-[40px] border' />
+                                    <input type="text" placeholder={item.placeholder} className='px-3 w-full text-gray-400 bg-white rounded-lg h-[40px] outline-none' />
                                 </div>
                             )
                         })
                     }
                     <h1 className='font-bold'>Inquiry Type</h1>
                     <h1 className='font-bold'>Message</h1>
-                    <textarea className='bg-zinc-500 rounded-xl h-[150px]'></textarea>
+                    <textarea className='p-3 bg-white outline-none rounded-xl h-[150px]'></textarea>
                     <button className='py-4 text-xl font-semibold bg-blue-600 text-white rounded-xl'>Send message</button>
                 </div>
                 <div className='w-1/2 p-4 flex flex-col gap-4'>
 
-                    <div className='p-5 bg-gray-100 border rounded-lg border-zinc-300 shadow-lg'>
+                    <div className='p-5 bg-gray-100  bg-white rounded-lg shadow-lg'>
                         <h1 className='font-bold text-3xl mb-4'>Contact Information</h1>
 
                         {
@@ -63,7 +62,7 @@ const Contact = () => {
                         }
                     </div>
 
-                    <div className='p-6 flex flex-col gap-4 border bg-gray-100 rounded-xl border-zinc-300 shadow-lg'>
+                    <div className='p-6 flex flex-col gap-4 bg-white rounded-xl  shadow-lg'>
                         <h1 className='text-2xl font-semibold'>Business Hours</h1>
                         <div className='flex justify-between'>
                             <span>Sunday-Thursday</span>
