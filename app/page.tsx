@@ -6,7 +6,6 @@ import Services from '@/components/landingComponents/Services';
 import InitialLanding from '@/components/landingComponents/InitialLanding';
 import Nav from '@/components/landingComponents/Nav';
 import Contact from '@/components/landingComponents/Contact';
-import LoginComponent from '@/components/landingComponents/Login';
 import Footer from '@/components/landingComponents/Footer';
 import BusinessSolutions from '@/components/landingComponents/Partner';
 import TeamSection from '@/components/landingComponents/TeamSection';

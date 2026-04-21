@@ -19,7 +19,7 @@ const InitialLanding = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className='flex flex-col py-4'>
+    <div className='flex flex-col '>
       <div className='py-5'>
         <span className='text-[#5793C6] text-4xl'>An intelligent mobility ecosystem combining </span>
         <span className='text-3xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent text-3xl font-bold font-bold'>{features[index]}</span>
@@ -58,7 +58,7 @@ const InitialLanding = () => {
           </button>
         </div>
         <div className='w-2/6 '>
-          <Image src='/hand.png' height={300} width={400} alt='Hand gesture illustration' className=' absolute right-[10px] top-[-28px]' />
+          <Image src='/hand.png' height={300} width={400} alt='Hand gesture illustration' className=' rounded-2xl border-black absolute right-[0px] top-[0px]' />
         </div>
       </div>
 
