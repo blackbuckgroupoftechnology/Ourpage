@@ -50,7 +50,7 @@ const UserBenifits = () => {
                     BenifitData.map((item, index) => {
                         const Icon = item.img;
                         return (
-                            <div key={index} className='p-4 bg-white rounded-lg flex flex-col justify-center border border-white shadow-xl'>
+                            <div key={index} className='p-4 bg-white rounded-lg flex flex-col justify-center items-center border border-white shadow-xl'>
                                 <Icon className='w-20 h-20 text-blue-500' />
                                 {/* <FaUser className='w-20 h-20 text-blue-500' /> */}
                                 <h1>{item.title}</h1>

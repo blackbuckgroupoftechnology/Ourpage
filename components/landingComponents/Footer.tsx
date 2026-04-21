@@ -28,7 +28,7 @@ export function Footer() {
                     <div className="mb-10">
                         <div className="flex flex-col">
                             <div className="flex">
-                                <Image src="/YetriLOGO.png" alt="Landing Image" width={60} height={60} />
+                                <Image src="/yetri-logo.png" alt="Landing Image" width={60} height={60} />
                                 <div className="flex flex-col">
                                     <span className="text-2xl font-bold tracking-tight text-gray-100">
                                         Yatri TECH

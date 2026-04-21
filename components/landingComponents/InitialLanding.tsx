@@ -1,67 +1,101 @@
 "use client"
-import React from 'react'
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-
-import { HiArrowUpRight } from "react-icons/hi2";
-import { FaCalendarAlt } from "react-icons/fa";
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { HiArrowUpRight } from "react-icons/hi2"
+import { FaCalendarAlt } from "react-icons/fa"
 
 const features = ["Tracking", "Safety", "AI assistance", "Traffic Optimization", "Complete Vehicle Intelligence"]
 
 const InitialLanding = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % features.length);
-    }, 800); // change every 3 seconds
+      setIndex((prev) => (prev + 1) % features.length)
+    }, 1200)
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(interval)
+  }, [])
+
   return (
-    <div className='flex flex-col '>
-      <div className='py-5'>
-        <span className='text-[#5793C6] text-4xl'>An intelligent mobility ecosystem combining </span>
-        <span className='text-3xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent text-3xl font-bold font-bold'>{features[index]}</span>
+    <div className="w-full py-5 ">
+
+      {/* rotating feature line */}
+      <div className="mb-5">
+        <span className="text-[#5793C6] text-xl md:text-2xl font-medium">
+          An intelligent mobility ecosystem combining{" "}
+        </span>
+
+        <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent">
+          {features[index]}
+        </span>
       </div>
 
-      <div className='h-[600px] flex flex-col justify-between relative'>
-        <div className='flex flex-col gap-6 pr-10 w-6/8'>
-          <div className=''>
-            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent font-bold font-bold'>
-              Smart Mobility.
-            </span><br /><br />
-            <span className='text-5xl bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent font-bold font-bold'>
-              Safer Journeys.
-            </span>
+      {/* main section */}
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+        {/* left content */}
+        <div className="flex flex-col justify-between h-full flex-1">
+
+          <div className="space-y-6">
+
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                <span className="bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent">
+                  Smart Mobility.
+                </span>
+                <br />
+                <span className="bg-gradient-to-r from-[#0B2FA6] to-[#F512F1] bg-clip-text text-transparent">
+                  Safer Journeys.
+                </span>
+              </h1>
+            </div>
+
+            <p className="text-lg md:text-xl text-gray-700 font-medium">
+              YatriTECH brings intelligence to every vehicle from
+              private cars to public buses, ambulances,
+              fleets and government vehicle
+            </p>
+
+            <ul className="list-disc pl-5 space-y-3 text-lg md:text-xl text-gray-800">
+              <li>Track every vehicle in real-time with precision GPS technology</li>
+              <li>Protect your fleet with AI-powered safety alerts and crash detection</li>
+              <li>Empower passengers with live bus tracking and route information</li>
+              <li>Monitor driver behavior and optimize routes for maximum efficiency</li>
+            </ul>
+
           </div>
-          <p className='text-3xl font-semibold'>YatriTECH brings intelligence to every vehicle from
-            private cars to public buses, ambulances,
-            fleets and government vehicle</p>
 
-          <ul className='list-disc pl-7 flex flex-col gap-6 h-47 text-2xl font'>
-            <li>Track every vehicle in real-time with precision GPS technology</li>
-            <li>Protect your fleet with AI-powered safety alerts and crash detection</li>
-            <li>Empower passengers with live bus tracking and route information</li>
-            <li>Monitor driver behavior and optimize routes for maximum efficiency</li>
-          </ul>
+          {/* buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-10">
+
+            <button className="flex-1 py-3 text-lg font-semibold text-white bg-[#0649B3] rounded-xl shadow-md flex justify-center items-center gap-3 hover:scale-[1.02] transition">
+              OPEN ORDER
+              <HiArrowUpRight className="text-xl" />
+            </button>
+
+            <button className="flex-1 py-3 text-lg font-semibold text-[#9747FF] bg-gray-100 border border-gray-200 rounded-xl shadow-md flex justify-center items-center gap-2 hover:scale-[1.02] transition">
+              <FaCalendarAlt />
+              Schedule a Meeting
+            </button>
+
+          </div>
         </div>
 
-        <div className='w-6/8 flex justify-evenly items-center'>
-          <button className='p-2 w-3/8 text-2xl shadow-xl font-semibold text-white bg-[#0649B3] flex justify-center rounded-xl items-center gap-3 cursor-pointer'>
-            OPEN ORDER
-            <HiArrowUpRight className='text-2xl' />
-          </button>
-          <button className='p-2 w-3/8 text-2xl bg-gray-100 shadow-xl font-semibold text-[#9747FF] border flex justify-center items-center gap-2 border-white rounded-xl cursor-pointer'>
-            <FaCalendarAlt />
-            Schedule a Meeting
-          </button>
+        {/* right image */}
+        <div className="flex-1 flex justify-center">
+          <div className="relative w-full max-w-md">
+            <Image
+              src="/hand.png"
+              height={500}
+              width={500}
+              alt="Hand gesture illustration"
+              className="rounded-2xl shadow-lg"
+            />
+          </div>
         </div>
-        <div className='w-2/6 '>
-          <Image src='/hand.png' height={300} width={400} alt='Hand gesture illustration' className=' rounded-2xl border-black absolute right-[0px] top-[0px]' />
-        </div>
+
       </div>
-
     </div>
   )
 }
