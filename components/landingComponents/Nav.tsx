@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Nav = () => {
     return (
         <div className='p-3 pr-10 bg-gray-100 sticky top-0 z-50 flex justify-between items-center shadow-xl'>
-            <div className='flex gap-2cursor-pointer'>
+            <div className='flex gap-2 cursor-pointer'>
                 <Image src="/yetri-logo.png" alt="Landing Image" width={60} height={60} />
                 <div>
                     <h1 className='text-[#0649B3] text-3xl font-bold'>YatriTECH</h1>
