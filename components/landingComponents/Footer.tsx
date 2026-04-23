@@ -14,112 +14,110 @@ const social = [
     { img: MdOutlineMail },
     { img: FaXTwitter },
 ];
+
 const product = ['Features', 'Technology', 'Pricing', 'Documentation'];
 const company = ['Team', 'Business Solution', 'Careers', 'Contact'];
-const legal = ['Privcy Policy', 'Terms of Sercices', 'Cookie Policy'];
-
+const legal = ['Privacy Policy', 'Terms of Services', 'Cookie Policy'];
 
 export function Footer() {
     return (
-        <footer className="bg-zinc-800 border-t border-gray-200">
-            <div className="container mx-auto px-4 py-12 md:py-16">
-                <div className="flex justify-between">
-                    {/* Logo Section */}
-                    <div className="mb-10">
-                        <div className="flex flex-col">
-                            <div className="flex">
-                                <Image src="/yetri-logo.png" alt="Landing Image" width={60} height={60} />
-                                <div className="flex flex-col">
-                                    <span className="text-2xl font-bold tracking-tight text-gray-100">
-                                        Yatri TECH
-                                    </span>
-                                    <span className="text-sm text-gray-500 mt-1">
-                                        by BlackBuck
-                                    </span>
-                                </div>
+        <footer className="bg-zinc-900 text-gray-400">
+            <div className="max-w-7xl mx-auto px-6 py-14">
 
+                {/* Top Section */}
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+
+                    {/* Logo + Description */}
+                    <div className="md:col-span-2">
+                        <div className="flex items-center gap-3">
+                            <Image src="/yetri-logo.png" alt="Logo" width={50} height={50} />
+                            <div>
+                                <h2 className="text-white text-xl font-bold">YatriTECH</h2>
+                                <p className="text-sm text-gray-500">by BlackBuck</p>
                             </div>
-
-                            <p className="text-gray-600 max-w-md mt-4 text-sm">
-                                Next-generation vehicle intelligence for smarter, safer journeys.
-                            </p>
                         </div>
-                    </div>
-                    {/* Product Column */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider">
-                            Products
-                        </h3>
-                        <ul className="mt-4 flex flex-col space-y-3">
-                            {
-                                product.map((item, index) => {
-                                    return (
-                                        <Link key={index} href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
-                                            {item}
-                                        </Link>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
 
-                    {/* Company Column */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider">
-                            Company
-                        </h3>
-                        <ul className="mt-4 flex flex-col space-y-3">
-                            {
-                                company.map((item, index) => {
-                                    return (
-                                        <Link key={index} href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
-                                            {item}
-                                        </Link>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
+                        <p className="mt-4 text-sm text-gray-400 max-w-md leading-relaxed">
+                            Next-generation vehicle intelligence for smarter, safer, and more connected journeys.
+                        </p>
 
-                    {/* Legal Column */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-gray-100 uppercase tracking-wider">
-                            Legal
-                        </h3>
-                        <ul className="mt-4 flex flex-col space-y-3">
-                            {
-                                legal.map((item, index) => {
-                                    return (
-                                        <Link key={index} href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
-                                            {item}
-                                        </Link>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
-                </div>
-
-                {/* Copyright */}
-                <div className="flex justify-between mt-12 pt-8 border-t border-gray-200">
-                    <p className="text-sm text-gray-500 text-center">
-                        &copy; {new Date().getFullYear()} YatriTECH by BlackBuck. All rights reserved.
-                    </p>
-                    <div className='flex gap-7'>
-                        {
-                            social.map((item, index) => {
+                        {/* Social Icons */}
+                        <div className="flex gap-4 mt-6">
+                            {social.map((item, index) => {
                                 const Icon = item.img;
                                 return (
-                                    <div key={index} className='bg-zinc-900 p-2 rounded-lg cursor-pointer'>
-                                        <Icon className='text-zinc-300 h-5 w-5' />
+                                    <div 
+                                        key={index} 
+                                        className="p-2 rounded-lg bg-zinc-800 hover:bg-blue-600 transition cursor-pointer"
+                                    >
+                                        <Icon className="w-4 h-4 text-gray-300 hover:text-white" />
                                     </div>
                                 )
-                            })
-                        }
+                            })}
+                        </div>
                     </div>
+
+                    {/* Links Columns */}
+                    <div>
+                        <h3 className="text-white text-sm font-semibold mb-4">Product</h3>
+                        <ul className="space-y-3">
+                            {product.map((item, index) => (
+                                <Link 
+                                    key={index} 
+                                    href="#" 
+                                    className="block text-sm hover:text-white transition"
+                                >
+                                    {item}
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-white text-sm font-semibold mb-4">Company</h3>
+                        <ul className="space-y-3">
+                            {company.map((item, index) => (
+                                <Link 
+                                    key={index} 
+                                    href="#" 
+                                    className="block text-sm hover:text-white transition"
+                                >
+                                    {item}
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-white text-sm font-semibold mb-4">Legal</h3>
+                        <ul className="space-y-3">
+                            {legal.map((item, index) => (
+                                <Link 
+                                    key={index} 
+                                    href="#" 
+                                    className="block text-sm hover:text-white transition"
+                                >
+                                    {item}
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+
+                </div>
+
+                {/* Bottom Section */}
+                <div className="mt-12 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-sm text-gray-500 text-center md:text-left">
+                        © {new Date().getFullYear()} YatriTECH by BlackBuck. All rights reserved.
+                    </p>
+
+                    <p className="text-xs text-gray-600">
+                        Built for smarter transportation 🚍
+                    </p>
                 </div>
             </div>
         </footer>
     );
 }
+
 export default Footer;
